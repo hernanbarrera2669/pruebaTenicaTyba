@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        google()
+
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:2.1.5"
+        classpath "net.serenity-bdd:serenity-single-page-report:2.1.5"
+        classpath "io.freefair.gradle:lombok-plugin:5.1.1"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: "io.freefair.lombok"
+
+group 'com.tyba'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+    google()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+ext{
+    serenityVersion = '2.1.5'
+    serenityCucumberVersion = '2.2.5'
+}
+
+serenity {
+    reports = ["single-page-html"]
+}
+
+
+
+
+dependencies {
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    implementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-cucumber5:$rootProject.ext.serenityCucumberVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-reports:$rootProject.ext.serenityVersion"
+}
+

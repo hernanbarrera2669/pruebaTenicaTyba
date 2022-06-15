@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.tyba.runners.TybaRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.tyba.runners.TybaRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tyba.runners.html">com.tyba.runners</a> &gt; TybaRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Feature from file:///C:/Users/carolina.riost/Documents/hbarrera/tyba/tyba-master/tyba-master/PruebaTecnicaWebTyba/src/test/resources/features/web_tyba.feature
+
+?[31mFailed scenarios:?[0m
+?[31mfile:///C:/Users/carolina.riost/Documents/hbarrera/tyba/tyba-master/tyba-master/PruebaTecnicaWebTyba/src/test/resources/features/web_tyba.feature:10?[0m# Verificar que se realice el proceso de registro para un nuevo usuario
+?[31mfile:///C:/Users/carolina.riost/Documents/hbarrera/tyba/tyba-master/tyba-master/PruebaTecnicaWebTyba/src/test/resources/features/web_tyba.feature:18?[0m# Realizar el proceso de compra de productos
+
+2 Scenarios (?[31m2 failed?[0m)
+8 Steps (?[31m2 failed?[0m, ?[36m2 skipped?[0m, ?[32m4 passed?[0m)
+2m56.115s
+
+
+java.lang.AssertionError: No se pudo registrar el usuario correctamente - 
+Expected: &quot;HernanB&quot;
+     but: was &quot;&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.tyba.stepdefinitions.AdvantageStepDefinitions.verificarDatosRegistro(AdvantageStepDefinitions.java:74)
+	at ?.el usuario visualizara su nombre en la pantalla principal(file:///C:/Users/carolina.riost/Documents/hbarrera/tyba/tyba-master/tyba-master/PruebaTecnicaWebTyba/src/test/resources/features/web_tyba.feature:15)
+
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span title=&quot;GRAY&quot; id=&quot;bunny&quot; data-ng-repeat=&quot;color in colors&quot; class=&quot;bunny productColor ng-scope colorSelected GRAY&quot; data-ng-hide=&quot;color.code == 'ABCDEF'&quot; data-ng-style=&quot;color.code == 'FFFFFF' ?...              {'backgroundColor': '#' + color.code, 'border': 'solid 1px #9d9d9d' } :
+                                          {'backgroundColor': '#' + color.code, 'border': 'solid 1px transparent'}&quot; data-ng-class=&quot;{ colorSelected : colorSelected.name == color.name , GRAY : colorSelected.name}&quot; data-ng-click=&quot;setColor(color, $event)&quot; style=&quot;background-color: rgb(195, 195, 195); border: 1px solid transparent;&quot;&gt;
+                            &lt;/span&gt; is not clickable at point (900, 11). Other element would receive the click: &lt;header ng-show=&quot;welcome&quot; class=&quot;&quot;&gt;...&lt;/header&gt;
+  (Session info: chrome=102.0.5005.63)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LATAM-FX61GG3', ip: '172.20.10.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\CAROLI~1.RIO\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39fce7a898fb1123c6db33a4ac2201d4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1231)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$fjeR0UnE.performAs$accessor$3ZsYGled(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$fjeR0UnE.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.tyba.tasks.SeleccionarProducto.performAs(SeleccionarProducto.java:36)
+	at com.tyba.tasks.SeleccionarProducto$ByteBuddy$Nik2mXmO.performAs$accessor$MvlkN2kG(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.tyba.tasks.SeleccionarProducto$ByteBuddy$Nik2mXmO.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.tyba.stepdefinitions.AdvantageStepDefinitions.seleccionarProducto(AdvantageStepDefinitions.java:88)
+	at ?.Selecciono de la opción del menu POPULAR ITEMS el producto deseado, cambio el color, la cantidad y lo añado al carrito de compras(file:///C:/Users/carolina.riost/Documents/hbarrera/tyba/tyba-master/tyba-master/PruebaTecnicaWebTyba/src/test/resources/features/web_tyba.feature:23)
+
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at Jun 15, 2022, 9:04:01 AM</p>
+</div>
+</div>
+</body>
+</html>
